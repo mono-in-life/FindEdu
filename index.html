@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FindEdu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-v11-latin_cyrillic-800.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__logo"><img class="header__logo-icon is-active" src="../../img/svg/logo.svg" width="35" height="39" alt="Логотип FindEdu"><span class="header__logo-text">FindEdu</span></div>
+          <nav class="main-nav is-closed">
+            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+              <svg width="22" height="12">
+                <use xlink:href="img/sprite.svg#open"></use>
+              </svg>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Курсы</a>
+                <div class="submenu">
+                  <ul class="submenu__list">
+                    <li class="submenu__item"><span class="submenu__name">Дизайн</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="submenu-secondary">
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Web-дизайн</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Дизайн интерьеров</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">3D-моделирование</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Motion-дизайн</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Графический дизайн</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">3D-анимация</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">UX/UI дизайн</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">ArchiCAD</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Геймдизайн</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Adobe After Effects</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item"><span class="submenu__name">Программирование</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="submenu-secondary">
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Web-разработка</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">DevOps</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">JavaScript-разработка</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">ReactJS</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Мобильная разработка</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">GIT</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Системное администрирование</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Верстка на HTML/CSS</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Unity</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item"><span class="submenu__name">Аналитика</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="submenu-secondary">
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Data Science</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Продуктовая аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Web-аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Системная аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Бизнес-аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Аналитика на R</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Работа с Excel и Google таблицами</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Машинное обучение</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Нейронные сети</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item"><span class="submenu__name">Менеджмент</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="submenu-secondary">
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Product-менеджмент</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Личностный рост</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Управление разработкой и IT</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">AGile</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Бренд-менеджмент</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Запуск стартапов</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Финансовая аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Бухгалтерия</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Управление в SMM</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">IT-рекрутмент</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item"><span class="submenu__name">Маркетинг</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="submenu-secondary">
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Web-аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">SMM-продвижение</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Интернет-маркетинг</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">PR-менеджмент</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">SEO-продвижение</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Копирайтинг</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Контент-маркетинг</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">SERM и репутация</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Маркетинговая аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Google Ads</a></li>
+                      </ul>
+                    </li>
+                    <li class="submenu__item"><span class="submenu__name">Финансы</span>
+                      <svg width="10" height="10">
+                        <use xlink:href="img/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="submenu-secondary">
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Web-аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">SMM-продвижение</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Интернет-маркетинг</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">PR-менеджмент</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">SEO-продвижение</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Копирайтинг</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Контент-маркетинг</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">SERM и репутация</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Маркетинговая аналитика</a></li>
+                        <li class="submenu-secondary__item"><a class="submenu-secondary__link" href="#">Google Ads</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__wrapper-text">
+                <h1 class="title hero__title">FindEdu — все для <br>выбора новой профессии <br>в одном месте</h1>
+                <p class="hero__text">
+                  Изучение тем на вебинарах с преподавателями, личные консультации с наставником.
+                  После прохождения курса с&nbsp;наставником. После прохождения курса
+                </p>
+                <a class="btn" href="#">Сравнить курсы
+                  <div class="btn__icon">
+                    <svg width="18" height="18">
+                      <use xlink:href="img/sprite.svg#courses"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <div class="hero__wrapper-card">
+                <picture>
+                  <source type="image/webp" srcset="img/content/hero.webp, img/content/hero@2x.webp 2x"><img src="img/content/hero.png" srcset="img/content/hero@2x.png 2x" width="577" height="auto" alt="Счастливый мужчина сжимает кулаки в победном жесте">
+                </picture>
+                <div class="hero__promo promo">
+                  <div class="promo__name"><span class="promo__name-title">UX/UI designer</span>
+                    <div class="promo__name-rating">
+                      <svg width="14" height="14">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="14" height="14">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="14" height="14">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="14" height="14">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="14" height="14">
+                        <use xlink:href="img/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="promo__desc">UX/UI-дизайнер — одна из самых <br>востребованных профессий 2020 года</p>
+                  <div class="promo__numbers">
+                    <p class="promo__numbers-price">120 000 рублей</p>
+                    <p class="promo__numbers-companies">1 561 компания</p>
+                  </div>
+                  <div class="promo__schools">
+                    <div class="promo__school">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/skillbox-logo.webp, img/content/skillbox-logo@2x.webp 2x"><img src="img/content/skillbox-logo.jpg" srcset="img/content/skillbox-logo@2x.jpg 2x" width="24" height="24" alt="Логотип skillbox">
+                      </picture>
+                      <div class="promo__school-scale promo__school-scale--skillbox">
+                        <div class="promo__school-color promo__school-color--skillbox"></div>
+                      </div>
+                    </div>
+                    <div class="promo__school">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/skillfactory-logo.webp, img/content/skillfactory-logo@2x.webp 2x"><img src="img/content/skillfactory-logo.jpg" srcset="img/content/skillfactory-logo@2x.jpg 2x" width="24" height="24" alt="Логотип skillfactory">
+                      </picture>
+                      <div class="promo__school-scale promo__school-scale--skillfactory">
+                        <div class="promo__school-color promo__school-color--skillfactory"></div>
+                      </div>
+                    </div>
+                    <div class="promo__school">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/gb-logo.webp, img/content/gb-logo@2x.webp 2x"><img src="img/content/gb-logo.jpg" srcset="img/content/gb-logo@2x.jpg 2x" width="24" height="24" alt="Логотип gb">
+                      </picture>
+                      <div class="promo__school-scale promo__school-scale--gb">
+                        <div class="promo__school-color promo__school-color--gb"></div>
+                      </div>
+                    </div>
+                    <div class="promo__school">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/netology-logo.webp, img/content/netology-logo@2x.webp 2x"><img src="img/content/netology-logo.jpg" srcset="img/content/netology-logo@2x.jpg 2x" width="24" height="24" alt="Логотип netology">
+                      </picture>
+                      <div class="promo__school-scale promo__school-scale--netology">
+                        <div class="promo__school-color promo__school-color--netology"></div>
+                      </div>
+                    </div>
+                    <div class="promo__school">
+                      <picture>
+                        <source type="image/webp" srcset="img/content/skypro-logo.webp, img/content/skypro-logo@2x.webp 2x"><img src="img/content/skypro-logo.jpg" srcset="img/content/skypro-logo@2x.jpg 2x" width="24" height="24" alt="Логотип skypro">
+                      </picture>
+                      <div class="promo__school-scale promo__school-scale--skypro">
+                        <div class="promo__school-color promo__school-color--skypro"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="section courses">
+          <div class="container">
+            <h2 class="courses__title title-secondary">Выбери направление</h2>
+            <div class="courses__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide courses-slide courses-slide--design">
+                  <div class="courses-slide__title-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/courses-design.webp, img/content/courses-design@2x.webp 2x"><img src="img/content/courses-design.png" srcset="img/content/courses-design@2x.png 2x" width="75" height="68" alt="">
+                    </picture>
+                    <h3 class="courses-slide__title">Дизайн</h3>
+                  </div>
+                  <ul class="courses-slide__list">
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Web-дизайн</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Дизайн интерьеров</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">3D-моделирование</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Motion-дизайн</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Графический дизайн</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">3D-анимация</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">UX/UI дизайн</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">ArchiCAD</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Геймдизайн</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Adobe After Effects</a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide courses-slide courses-slide--programming">
+                  <div class="courses-slide__title-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/courses-programming.webp, img/content/courses-programming@2x.webp 2x"><img src="img/content/courses-programming.png" srcset="img/content/courses-programming@2x.png 2x" width="75" height="68" alt="">
+                    </picture>
+                    <h3 class="courses-slide__title">Программирование</h3>
+                  </div>
+                  <ul class="courses-slide__list">
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Web-разработка</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">DevOps</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">JavaScript-разработка</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">ReactJS</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Мобильная разработка</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">GIT</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Системное администрирование</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Верстка на HTML/CSS</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Unity</a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide courses-slide courses-slide--manage">
+                  <div class="courses-slide__title-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/courses-manage.webp, img/content/courses-manage@2x.webp 2x"><img src="img/content/courses-manage.png" srcset="img/content/courses-manage@2x.png 2x" width="75" height="68" alt="">
+                    </picture>
+                    <h3 class="courses-slide__title">Менеджмент</h3>
+                  </div>
+                  <ul class="courses-slide__list">
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Product-менеджмент</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Личностный рост</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Управление разработкой и IT</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">AGile</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Бренд-менеджмент</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Запуск стартапов</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Финансовая аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Бухгалтерия</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Управление в SMM</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">IT-рекрутмент</a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide courses-slide courses-slide--analiz">
+                  <div class="courses-slide__title-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/courses-analiz.webp, img/content/courses-analiz@2x.webp 2x"><img src="img/content/courses-analiz.png" srcset="img/content/courses-analiz@2x.png 2x" width="75" height="68" alt="">
+                    </picture>
+                    <h3 class="courses-slide__title">Аналитика</h3>
+                  </div>
+                  <ul class="courses-slide__list">
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Data Science</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Продуктовая аналитика</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Web-аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Системная аналитика</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Бизнес-аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Аналитика на R</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Работа с Excel и Google таблицами</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Машинное обучение</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Нейронные сети</a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide courses-slide courses-slide--marketing">
+                  <div class="courses-slide__title-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/courses-marketing.webp, img/content/courses-marketing@2x.webp 2x"><img src="img/content/courses-marketing.png" srcset="img/content/courses-marketing@2x.png 2x" width="75" height="68" alt="">
+                    </picture>
+                    <h3 class="courses-slide__title">Маркетинг</h3>
+                  </div>
+                  <ul class="courses-slide__list">
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Web-аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">SMM-продвижение</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Интернет-маркетинг</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">PR-менеджмент</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">SEO-продвижение</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Копирайтинг</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Контент-маркетинг</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">SERM и репутация</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Маркетинговая аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Google Ads</a></li>
+                  </ul>
+                </div>
+                <div class="swiper-slide courses-slide courses-slide--finances">
+                  <div class="courses-slide__title-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/courses-finances.webp, img/content/courses-finances@2x.webp 2x"><img src="img/content/courses-finances.png" srcset="img/content/courses-finances@2x.png 2x" width="75" height="68" alt="">
+                    </picture>
+                    <h3 class="courses-slide__title">Финансы</h3>
+                  </div>
+                  <ul class="courses-slide__list">
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Web-аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">SMM-продвижение</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Интернет-маркетинг</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">PR-менеджмент</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">SEO-продвижение</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Копирайтинг</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Контент-маркетинг</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">SERM и репутация</a></li>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Маркетинговая аналитика</a></li>
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#rhomb"></use>
+                    </svg>
+                    <li class="courses-slide__item"><a class="courses-slide__item-link" href="#">Google Ads</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="slider-navigation courses-slider__navigation">
+                <div class="slider-navigation__button slider-navigation__button--prev">
+                  <svg width="7" height="12">
+                    <use xlink:href="img/sprite.svg#left"></use>
+                  </svg>
+                </div>
+                <div class="slider-navigation__button slider-navigation__button--next">
+                  <svg width="7" height="12">
+                    <use xlink:href="img/sprite.svg#right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="features">
+          <div class="container">
+            <h2 class="title-secondary visually-hidden">Наши преимущества</h2>
+            <div class="features__slider features-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide features-slide"><span class="features-slide__lead">Агрегируем курсы по самым актуальным темам для новичков и практикующих специалистов.</span>
+                  <div class="features-slide__wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/features-1.webp, img/slides/features-1@2x.webp 2x"><img src="img/slides/features-1.png" srcset="img/slides/features-1@2x.png 2x" width="425" height="383" alt="Мультяшный студент в шапочке сидит за столом с компьютером">
+                    </picture>
+                    <h2 class="features-slide__title">300+ довольных пользователей</h2>
+                    <p class="features-slide__text">Дополнительно в этом методе есть кнопка «Объединить по строкам». С помощью неё можно объединить ячейки выбранного диапазона построчно.</p>
+                  </div>
+                  <ul class="features-slide__list">
+                    <li class="features-slide__item features-slide__item--active">
+                      <svg width="25" height="25">
+                        <use xlink:href="img/sprite.svg#users"></use>
+                      </svg><span class="features-slide__item-title">Довольные пользователи</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                    <li class="features-slide__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#courses"></use>
+                      </svg><span class="features-slide__item-title">Образовательные курсы</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                    <li class="features-slide__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#teachers"></use>
+                      </svg><span class="features-slide__item-title">Менторы из больших компаний</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                  </ul>
+                  <div class="slider-navigation feature-slider__navigation">
+                    <div class="slider-navigation__button slider-navigation__button--prev">
+                      <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#left"></use>
+                      </svg>
+                    </div>
+                    <div class="slider-navigation__button slider-navigation__button--next">
+                      <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features-slide"><span class="features-slide__lead">Агрегируем курсы по самым актуальным темам для новичков и практикующих специалистов.</span>
+                  <div class="features-slide__wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/features-2.webp, img/slides/features-2@2x.webp 2x"><img src="img/slides/features-2.png" srcset="img/slides/features-2@2x.png 2x" width="425" height="425" alt="Мультяшный человечек с головой-монитором смотрит в ноутбук">
+                    </picture>
+                    <h2 class="features-slide__title">1000+ образовательных курсов</h2>
+                    <p class="features-slide__text">Дополнительно в этом методе есть кнопка «Объединить по строкам». С помощью неё можно объединить ячейки выбранного диапазона построчно.</p>
+                  </div>
+                  <ul class="features-slide__list">
+                    <li class="features-slide__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#users"></use>
+                      </svg><span class="features-slide__item-title">Довольные пользователи</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                    <li class="features-slide__item features-slide__item--active">
+                      <svg width="20" height="20">
+                        <use xlink:href="img/sprite.svg#courses"></use>
+                      </svg><span class="features-slide__item-title">Образовательные курсы</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                    <li class="features-slide__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#teachers"></use>
+                      </svg><span class="features-slide__item-title">Менторы из больших компаний</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                  </ul>
+                  <div class="slider-navigation feature-slider__navigation">
+                    <div class="slider-navigation__button slider-navigation__button--prev">
+                      <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#left"></use>
+                      </svg>
+                    </div>
+                    <div class="slider-navigation__button slider-navigation__button--next">
+                      <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features-slide"><span class="features-slide__lead">Агрегируем курсы по самым актуальным темам для новичков и практикующих специалистов.</span>
+                  <div class="features-slide__wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/features-3.webp, img/slides/features-3@2x.webp 2x"><img src="img/slides/features-3.png" srcset="img/slides/features-3@2x.png 2x" width="425" height="425" alt="Мультяшный преподаватель в рубашке и шортах держит ноутбук">
+                    </picture>
+                    <h2 class="features-slide__title">1000+ образовательных курсов</h2>
+                    <p class="features-slide__text">Дополнительно в этом методе есть кнопка «Объединить по строкам». С помощью неё можно объединить ячейки выбранного диапазона построчно.</p>
+                  </div>
+                  <ul class="features-slide__list">
+                    <li class="features-slide__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#users"></use>
+                      </svg><span class="features-slide__item-title">Довольные пользователи</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                    <li class="features-slide__item">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#courses"></use>
+                      </svg><span class="features-slide__item-title">Образовательные курсы</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                    <li class="features-slide__item features-slide__item--active">
+                      <svg width="14" height="20">
+                        <use xlink:href="img/sprite.svg#teachers"></use>
+                      </svg><span class="features-slide__item-title">Менторы из больших компаний</span>
+                      <p class="features-slide__item-description">Изучение тем на вебинарах с преподавателями, наставником. После прохождения курса вы будете</p>
+                    </li>
+                  </ul>
+                  <div class="slider-navigation feature-slider__navigation">
+                    <div class="slider-navigation__button slider-navigation__button--prev">
+                      <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#left"></use>
+                      </svg>
+                    </div>
+                    <div class="slider-navigation__button slider-navigation__button--next">
+                      <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#right"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__flex">
+              <div class="footer__logo"><img class="footer__logo-icon" src="../../img/svg/logo-white.svg" width="35" height="39" alt="Логотип FindEdu"><span class="footer__logo-text">FindEdu</span></div>
+              <p class="footer__copyright">© FindEdu 2022. <br>Все права защищены.</p>
+            </div>
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Категории</a>
+                  <ul class="footer-nav__submenu footer-nav-submenu">
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Дизайн</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Программирование</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Маркетинг</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Менеджмент</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Аналитика</a></li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Популярные направления</a>
+                  <ul class="footer-nav__submenu footer-nav-submenu">
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Веб-разработка</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Java-разработка</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Python-разработка</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">SMM-продвижение</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Графический дизайн</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Дизайн интерьеров</a></li>
+                  </ul>
+                </li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Общая информация</a>
+                  <ul class="footer-nav__submenu footer-nav-submenu">
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">О проекте</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-nav-submenu__item"><a class="footer-nav-submenu__link" href="#">Пользовательское соглашение</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
