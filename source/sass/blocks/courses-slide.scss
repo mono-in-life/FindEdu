@@ -1,0 +1,65 @@
+.courses-slide {
+  padding: size(60px) size(16px) size(90px) size(34px);
+  width: 32%;
+  max-height: size(425px);
+  border-radius: size(56px);
+  background-color: $color-default-white;
+
+  &__title-wrapper {
+    margin-bottom: size(75px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-left: size(26px);
+    font-family: $ff-gilroy;
+    font-size: size(25px);
+    line-height: size(30px);
+    font-weight: 500;
+    color: $color-title-secondary;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: size(3px) size(7px);
+  }
+
+  &__item-link {
+    font-size: size(17px);
+    line-height: size(27px);
+    color: $color-dark-gray;
+  }
+
+  // &--design {
+
+  // }
+
+  // &--programming {
+
+  // }
+
+  // &--manage {
+
+  // }
+
+  // &--analiz {
+
+  // }
+
+  // &--marketing {
+
+  // }
+
+  // &--finances {
+
+  // }
+
+}

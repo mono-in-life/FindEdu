@@ -3,17 +3,42 @@
 
 // Default
 
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
-$color-transparent:                 rgba(255, 255, 255, 0);
-$color-accent-main: #2c39f2;
-$color-accent-second: #212121;
+$color-default-black: #181515;
+$color-black: #000000;
+$color-background-black: #222222;
+$color-title-secondary: #302828;
+$color-default-white: #ffffff;
+$color-background-white: #fafafa;
+$color-font-gray: #bababa;
+$color-dark-gray: #6b6b6b;
+$main-nav-link: #454545;
+$color-transparent: rgba(255, 255, 255, 0);
+$color-accent-main: #486dd8;
+$color-logo: #1d5cbb;
+$color-accent-icon: #655BD5;
+$color-btn-icon: #678CF8;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
+$color-lavender: #dfe1ff;
+$color-free-speech-blue: #323be1;
+$color-pastel-green: #82d97c4f;
+$color-fruit-salad: #5caf56;
+$color-whisper: #e7e7e7;
+$color-pig-pink: #ffcfe0;
+$color-pattens-blue: #cdedff;
+$color-nero: #222222;
+$color-cerise: #eb236b;
+$color-malibu: #54bff9;
+$color-maya-blue: #82b4ff;
+$color-tickle-me-pink: #ff89ad;
+$color-your-pink: #ffccbd;
+$color-carnation-pink: #ff9ebb;
+$color-macaroni-and-cheese: #ffb985;
+$color-maya-blue: #6cb7f2;
+
+
 
 // Gradient
 
@@ -27,9 +52,9 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$ff-default:                         "Inter", "Verdana", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-gilroy:                    "Gilroy", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

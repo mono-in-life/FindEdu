@@ -1,13 +1,28 @@
 .header {
-  padding: 28px 0;
-
-  background-color: $color-neon-blue;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: size(42px) 0 size(37px) 0;
+  background-color: $color-default-white;
+  border-bottom: size(1px) solid #eaeaea;
 
   .container {
     display: flex;
   }
 
   &__logo {
-    color: $color-default-white;
+    margin-right: size(240px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: size(118px);
+    height: size(39px);
+  }
+
+  &__logo-text {
+    color: $color-accent-main;
+    font-size: size(19px);
+    line-height: size(23px);
+    font-weight: 600;
   }
 }

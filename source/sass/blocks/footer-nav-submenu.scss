@@ -1,0 +1,13 @@
+.footer-nav-submenu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: size(24px);
+
+  &__link {
+    font-size: size(16px);
+    color: $color-dark-gray;
+  }
+}

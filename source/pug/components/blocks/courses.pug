@@ -1,0 +1,333 @@
+include ../utils/icon
+include ../utils/picture
+include ../utils/img
+include ../mixins/slider-navigation
+
+mixin courses()
+
+  -
+    const coursesSlides = [
+      {
+        href: "#",
+        name: "design",
+        title: "Дизайн",
+        list: [
+          {
+            text: "Web-дизайн",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Дизайн интерьеров",
+            href: "#"
+          },
+          {
+            text: "3D-моделирование",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Motion-дизайн",
+            href: "#"
+          },
+          {
+            text: "Графический дизайн",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "3D-анимация",
+            href: "#"
+          },
+          {
+            text: "UX/UI дизайн",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "ArchiCAD",
+            href: "#"
+          },
+          {
+            text: "Геймдизайн",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Adobe After Effects",
+            href: "#"
+          }
+        ]
+      },
+      {
+        href: "#",
+        name: "programming",
+        title: "Программирование",
+        list: [
+          {
+            text: "Web-разработка",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "DevOps",
+            href: "#"
+          },
+          {
+            text: "JavaScript-разработка",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "ReactJS",
+            href: "#"
+          },
+          {
+            text: "Мобильная разработка",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "GIT",
+            href: "#"
+          },
+          {
+            text: "Системное администрирование",
+            href: "#"
+          },
+          {
+            text: "Верстка на HTML/CSS",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Unity",
+            href: "#"
+          }
+        ]
+      },
+      {
+        href: "#",
+        name: "manage",
+        title: "Менеджмент",
+        list: [
+          {
+            text: "Product-менеджмент",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Личностный рост",
+            href: "#"
+          },
+          {
+            text: "Управление разработкой и IT",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "AGile",
+            href: "#"
+          },
+          {
+            text: "Бренд-менеджмент",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Запуск стартапов",
+            href: "#"
+          },
+          {
+            text: "Финансовая аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Бухгалтерия",
+            href: "#"
+          },
+          {
+            text: "Управление в SMM",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "IT-рекрутмент",
+            href: "#"
+          }
+        ]
+      },
+      {
+        href: "#",
+        name: "analiz",
+        title: "Аналитика",
+        list: [
+          {
+            text: "Data Science",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Продуктовая аналитика",
+            href: "#"
+          },
+          {
+            text: "Web-аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Системная аналитика",
+            href: "#"
+          },
+          {
+            text: "Бизнес-аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Аналитика на R",
+            href: "#"
+          },
+          {
+            text: "Работа с Excel и Google таблицами",
+            href: "#"
+          },
+          {
+            text: "Машинное обучение",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Нейронные сети",
+            href: "#"
+          }
+        ]
+      },
+      {
+        href: "#",
+        name: "marketing",
+        title: "Маркетинг",
+        list: [
+          {
+            text: "Web-аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "SMM-продвижение",
+            href: "#"
+          },
+          {
+            text: "Интернет-маркетинг",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "PR-менеджмент",
+            href: "#"
+          },
+          {
+            text: "SEO-продвижение",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Копирайтинг",
+            href: "#"
+          },
+          {
+            text: "Контент-маркетинг",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "SERM и репутация",
+            href: "#"
+          },
+          {
+            text: "Маркетинговая аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Google Ads",
+            href: "#"
+          }
+        ]
+      },
+      {
+        href: "#",
+        name: "finances",
+        title: "Финансы",
+        list: [
+          {
+            text: "Web-аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "SMM-продвижение",
+            href: "#"
+          },
+          {
+            text: "Интернет-маркетинг",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "PR-менеджмент",
+            href: "#"
+          },
+          {
+            text: "SEO-продвижение",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Копирайтинг",
+            href: "#"
+          },
+          {
+            text: "Контент-маркетинг",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "SERM и репутация",
+            href: "#"
+          },
+          {
+            text: "Маркетинговая аналитика",
+            href: "#",
+            icon: true
+          },
+          {
+            text: "Google Ads",
+            href: "#"
+          }
+        ]
+      }
+    ]
+
+  .section.courses
+    //- .courses__gradient
+      +img("content", "gradient", "webp", "3023", "1426", "")
+    .container
+      h2.courses__title.title-secondary Выбери направление
+      .courses__slider
+
+        .swiper-wrapper
+          each course in coursesSlides
+            .swiper-slide.courses-slide(class="courses-slide--" + course.name)
+              .courses-slide__title-wrapper
+                +picture("content", "courses-" + course.name, "png", "75", "68", "")
+                h3.courses-slide__title #{course.title}
+              ul.courses-slide__list
+                each item in course.list
+                  li.courses-slide__item
+                    a.courses-slide__item-link(href=item.href) #{item.text}
+                  if item.icon
+                    +icon("rhomb", 16, 16)
+        +slider-navigation("courses-slider__navigation")

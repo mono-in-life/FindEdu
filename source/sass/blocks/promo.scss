@@ -1,0 +1,139 @@
+.promo {
+  position: relative;
+  margin: size(-93px) size(38px) 0 size(52px);
+  padding: size(27px) size(17px) size(15px) size(17px);
+  font-family: $ff-gilroy;
+  background-color: #f8f7fc;
+  border: solid 1px #e3e3e3;
+  border-radius: size(17px);
+  z-index: 1;
+
+  &__name {
+    padding-left: size(3px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__name-title {
+    margin-right: size(21px);
+    margin-bottom: size(7px);
+    font-size: size(20px);
+    font-weight: 600;
+    line-height: size(25px);
+    color: $color-black;
+  }
+
+  &__name-rating {
+    display: flex;
+    gap: size(3px);
+  }
+
+  &__desc {
+    padding: 0;
+    padding-left: size(3px);
+    margin: 0;
+    margin-bottom: size(17px);
+    font-size: size(15px);
+    line-height: size(19px);
+    color: #6f6e6e;
+  }
+
+  &__numbers {
+    position: absolute;
+    top: size(32px);
+    right: size(27px);
+    font-size: size(15px);
+    line-height: size(18px);
+    font-weight: 600;
+    text-align: right;
+  }
+
+  &__numbers-price {
+    margin: 0;
+    margin-bottom: size(4px);
+    color: $color-black;
+  }
+
+  &__numbers-companies {
+    margin: 0;
+  }
+
+  &__schools {
+    display: flex;
+    flex-direction: column;
+    gap: size(8px);
+
+    img {
+      margin-right: size(18px);
+      width: size(24px);
+      height: size(24px);
+      border-radius: 50%;
+    }
+  }
+
+  &__school {
+    display: flex;
+    align-items: center;
+  }
+
+  &__school-scale {
+    height: size(17px);
+    border-radius: size(5px);
+
+    &--skillbox {
+      width: size(186px);
+      background-color: $color-lavender;
+    }
+
+    &--skillfactory {
+      width: size(273px);
+      background-color: $color-pastel-green;
+    }
+
+    &--gb {
+      width: size(347px);
+      background-color: $color-whisper;
+    }
+
+    &--netology {
+      width: size(276px);
+      background-color: $color-pig-pink;
+    }
+
+    &--skypro {
+      width: size(302px);
+      background-color: $color-pattens-blue;
+    }
+  }
+
+  &__school-color {
+    height: size(17px);
+    border-top-left-radius: size(5px);
+    border-bottom-left-radius: size(5px);
+
+    &--skillbox {
+      width: size(107px);
+      background-color: #323be1;
+    }
+
+    &--skillfactory {
+      width: size(192px);
+      background-color: $color-fruit-salad;
+    }
+
+    &--gb {
+      width: size(146px);
+      background-color: $color-nero;
+    }
+
+    &--netology {
+      width: size(208px);
+      background-color: $color-cerise;
+    }
+
+    &--skypro {
+      width: size(135px);
+      background-color: $color-malibu;
+    }
+  }
+}

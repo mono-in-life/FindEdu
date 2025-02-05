@@ -1,3 +1,287 @@
+mixin submenu-secondary(item)
+
+  -
+    const submenuSecondaryList = [
+      {
+        name: "Дизайн",
+        list: [
+          {
+            text: "Web-дизайн",
+            href: "#"
+          },
+          {
+            text: "Дизайн интерьеров",
+            href: "#"
+          },
+          {
+            text: "3D-моделирование",
+            href: "#"
+          },
+          {
+            text: "Motion-дизайн",
+            href: "#"
+          },
+          {
+            text: "Графический дизайн",
+            href: "#"
+          },
+          {
+            text: "3D-анимация",
+            href: "#"
+          },
+          {
+            text: "UX/UI дизайн",
+            href: "#"
+          },
+          {
+            text: "ArchiCAD",
+            href: "#"
+          },
+          {
+            text: "Геймдизайн",
+            href: "#"
+          },
+          {
+            text: "Adobe After Effects",
+            href: "#"
+          }
+        ]
+      },
+      {
+        name: "Программирование",
+        list: [
+          {
+            text: "Web-разработка",
+            href: "#"
+          },
+          {
+            text: "DevOps",
+            href: "#"
+          },
+          {
+            text: "JavaScript-разработка",
+            href: "#"
+          },
+          {
+            text: "ReactJS",
+            href: "#"
+          },
+          {
+            text: "Мобильная разработка",
+            href: "#"
+          },
+          {
+            text: "GIT",
+            href: "#"
+          },
+          {
+            text: "Системное администрирование",
+            href: "#"
+          },
+          {
+            text: "Верстка на HTML/CSS",
+            href: "#"
+          },
+          {
+            text: "Unity",
+            href: "#"
+          }
+        ]
+      },
+      {
+        name:"Аналитика",
+        list: [
+          {
+            text: "Data Science",
+            href: "#"
+          },
+          {
+            text: "Продуктовая аналитика",
+            href: "#"
+          },
+          {
+            text: "Web-аналитика",
+            href: "#"
+          },
+          {
+            text: "Системная аналитика",
+            href: "#"
+          },
+          {
+            text: "Бизнес-аналитика",
+            href: "#"
+          },
+          {
+            text: "Аналитика на R",
+            href: "#"
+          },
+          {
+            text: "Работа с Excel и Google таблицами",
+            href: "#"
+          },
+          {
+            text: "Машинное обучение",
+            href: "#"
+          },
+          {
+            text: "Нейронные сети",
+            href: "#"
+          }
+        ]
+      },
+      {
+        name:"Менеджмент",
+        list: [
+          {
+            text: "Product-менеджмент",
+            href: "#"
+          },
+          {
+            text: "Личностный рост",
+            href: "#"
+          },
+          {
+            text: "Управление разработкой и IT",
+            href: "#"
+          },
+          {
+            text: "AGile",
+            href: "#"
+          },
+          {
+            text: "Бренд-менеджмент",
+            href: "#"
+          },
+          {
+            text: "Запуск стартапов",
+            href: "#"
+          },
+          {
+            text: "Финансовая аналитика",
+            href: "#"
+          },
+          {
+            text: "Бухгалтерия",
+            href: "#"
+          },
+          {
+            text: "Управление в SMM",
+            href: "#"
+          },
+          {
+            text: "IT-рекрутмент",
+            href: "#"
+          }
+        ]
+      },
+      {
+        name:"Маркетинг",
+        list: [
+          {
+            text: "Web-аналитика",
+            href: "#"
+          },
+          {
+            text: "SMM-продвижение",
+            href: "#"
+          },
+          {
+            text: "Интернет-маркетинг",
+            href: "#"
+          },
+          {
+            text: "PR-менеджмент",
+            href: "#"
+          },
+          {
+            text: "SEO-продвижение",
+            href: "#"
+          },
+          {
+            text: "Копирайтинг",
+            href: "#"
+          },
+          {
+            text: "Контент-маркетинг",
+            href: "#"
+          },
+          {
+            text: "SERM и репутация",
+            href: "#"
+          },
+          {
+            text: "Маркетинговая аналитика",
+            href: "#"
+          },
+          {
+            text: "Google Ads",
+            href: "#"
+          }
+        ]
+      },
+      {
+        name: "Финансы",
+        list: [
+          {
+            text: "Web-аналитика",
+            href: "#"
+          },
+          {
+            text: "SMM-продвижение",
+            href: "#"
+          },
+          {
+            text: "Интернет-маркетинг",
+            href: "#"
+          },
+          {
+            text: "PR-менеджмент",
+            href: "#"
+          },
+          {
+            text: "SEO-продвижение",
+            href: "#"
+          },
+          {
+            text: "Копирайтинг",
+            href: "#"
+          },
+          {
+            text: "Контент-маркетинг",
+            href: "#"
+          },
+          {
+            text: "SERM и репутация",
+            href: "#"
+          },
+          {
+            text: "Маркетинговая аналитика",
+            href: "#"
+          },
+          {
+            text: "Google Ads",
+            href: "#"
+          }
+        ]
+      }
+    ]
+
+  ul.submenu-secondary
+    each object in submenuSecondaryList
+      if item === object.name
+        each item in object.list
+          li.submenu-secondary__item
+            a.submenu-secondary__link(href=item.href)= item.text
+
+mixin submenu(submenuList)
+  .submenu
+    ul.submenu__list
+      each item in submenuList
+        li.submenu__item
+          span.submenu__name= item
+          +icon("down", 10, 10)
+          +submenu-secondary(item)
+
 mixin header(headerMods, currentUrl)
   -
     const headerLinks = [
@@ -7,11 +291,12 @@ mixin header(headerMods, currentUrl)
       },
       {
         href: "#",
-        text: "Страница 2"
+        text: "Курсы",
+        submenu: [ "Дизайн", "Программирование", "Аналитика", "Менеджмент", "Маркетинг", "Финансы"]
       },
       {
         href: "#",
-        text: "Страница 3"
+        text: "Блог"
       },
     ]
 
@@ -19,18 +304,33 @@ mixin header(headerMods, currentUrl)
     .container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo Логотип
+        .header__logo
+          img.header__logo-icon.is-active(
+            src="../../img/svg/logo.svg",
+            width="35",
+            height="39",
+            alt="Логотип FindEdu"
+          )
+          span.header__logo-text FindEdu
       else
-        a.header__logo(href="index.html", aria-label="Переход на главную") Логотип
-      nav.main-nav
+        a.header__logo(href="index.html", aria-label="Переход на главную")
+          img.header__logo-icon(
+            src="../../img/svg/logo.svg",
+            width="35",
+            height="39",
+            alt="Логотип FindEdu"
+          )
+          span.header__logo-text FindEdu
+      nav.main-nav.is-closed
         button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
-        .main-nav__wrapper
-          ul.main-nav__list
-            each link in headerLinks
-              - const activeState = currentUrl === link.href
-              li.main-nav__item
-                if(activeState)
-                  span.main-nav__link.is-active= link.text
-                else
-                  a.main-nav__link(href=link.href)= link.text
+          +icon("open", 22, 12)
+        ul.main-nav__list
+          each link in headerLinks
+            - const activeState = currentUrl === link.href
+            li.main-nav__item
+              if activeState
+                span.main-nav__link.is-active= link.text
+              else
+                a.main-nav__link(href=link.href)= link.text
+                if link.submenu
+                  +submenu(link.submenu)

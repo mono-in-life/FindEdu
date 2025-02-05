@@ -1,0 +1,8 @@
+include ../utils/icon
+
+mixin slider-navigation(className)
+  .slider-navigation(class=className)
+    .slider-navigation__button.slider-navigation__button--prev
+      +icon("left", 7, 12)
+    .slider-navigation__button.slider-navigation__button--next
+      +icon("right", 7, 12)

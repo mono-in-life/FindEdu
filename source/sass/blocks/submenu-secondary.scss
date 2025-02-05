@@ -1,0 +1,27 @@
+.submenu-secondary {
+  display: none;
+  margin: 0;
+  padding: size(20px);
+  width: 100%;
+  position: absolute;
+  top: size(73px);
+  left: size(-45px);
+  list-style: none;
+  min-width: max-content;
+  flex-direction: column;
+  gap: size(10px);
+  background-color: $color-default-white;
+
+  @include hover-focus {
+    display: flex;
+  }
+
+  &__link {
+    color: $color-font-gray;
+    transition: color $trans-default;
+
+    @include hover-focus {
+      color: $main-nav-link;
+    }
+  }
+}

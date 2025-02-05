@@ -1,0 +1,30 @@
+.hero {
+  padding: size(86px) 0 size(54px) 0;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__wrapper-text {
+    padding-top: size(199px);
+    width: 60%;
+  }
+
+  &__wrapper-card {
+    margin-left: size(-100px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: size(32px);
+    padding: 0;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: size(47px);
+    padding: 0;
+    line-height: size(23px);
+    width: 70%;
+  }
+}

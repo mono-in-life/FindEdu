@@ -1,23 +1,38 @@
 .main-nav {
+  display: flex;
+  align-items: center;
+
   &__list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
     padding: 0;
 
     list-style: none;
   }
 
   &__item {
-    margin-right: 20px;
+    margin-right: size(87px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include hover-focus {
+      .submenu {
+        display: flex;
+      }
+    }
   }
 
   &__link {
-    color: $color-default-white;
+    padding: size(42px) size(42px) size(44px) size(42px);
+    line-height: size(19px);
+    font-weight: 500;
+    color: $main-nav-link;
 
     &.is-active {
-      opacity: 0.6;
+      color: $color-accent-main;
     }
   }
 

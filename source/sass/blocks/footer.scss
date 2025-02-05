@@ -1,5 +1,32 @@
 .footer {
-  padding: 40px 0;
+  padding: size(80px) 0;
+  min-height: size(742px);
+  background-color: $color-background-black;
 
-  background-color: $color-neon-blue;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__flex {
+    margin-right: size(98px);
+    font-size: size(20px);
+    line-height: size(32px);
+    color: $color-dark-gray;
+  }
+
+  &__logo {
+    margin-bottom: size(47px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: size(124px);
+    height: size(41px);
+  }
+
+  &__logo-text {
+    color: $color-default-white;
+    font-size: size(20px);
+    line-height: size(24px);
+    font-weight: 600;
+  }
 }

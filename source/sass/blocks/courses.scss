@@ -1,0 +1,18 @@
+.courses {
+  position: relative;
+  padding: size(54px) 0 size(189px) 0;
+}
+
+.courses__gradient {
+  position: absolute;
+  top: -330px;
+}
+
+.courses__title {
+  margin-bottom: size(52px);
+}
+
+.courses__slider {
+  width: 100%;
+  overflow: hidden;
+}

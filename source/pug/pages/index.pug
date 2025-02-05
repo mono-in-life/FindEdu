@@ -1,7 +1,10 @@
 extends ../components/base/layout
+include ../components/blocks/hero
+include ../components/blocks/courses
+include ../components/blocks/features
 
 block variables
-  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "FindEdu"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -13,6 +16,9 @@ block main
   main
     //- на странице запрещен "голый" код
     //- все блоки вставляются из папки pug/components/blocks
-    +intro()
+    +hero()
+    +courses()
+    +features()
+
 
 block modals

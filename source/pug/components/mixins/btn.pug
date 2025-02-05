@@ -1,3 +1,5 @@
+include ../utils/icon
+
 mixin btn(options = {})
   - const tag = options.href ? "a" : "button";
   - const href = options.href || false;
@@ -7,3 +9,6 @@ mixin btn(options = {})
   - const rel = options.isExternal ? "nofollow noopener noreferrer" : false;
 
   #{tag}.btn(href=href, target=target, rel=rel, type=type)&attributes(attributes)!= text
+    if options.svg
+      .btn__icon
+        +icon(options.svg, options.svg_width, options.svg_height)

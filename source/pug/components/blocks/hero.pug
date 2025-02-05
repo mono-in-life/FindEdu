@@ -1,0 +1,48 @@
+include ../mixins/btn
+include ../utils/picture
+
+mixin school (name)
+  .promo__school
+    +picture("content", `${name}-logo`, "jpg", "24", "24", `Логотип ${name}`)
+    .promo__school-scale(class="promo__school-scale--" + name)
+      .promo__school-color(class="promo__school-color--" + name)
+
+mixin hero()
+
+  -
+    const schools = ["skillbox", "skillfactory", "gb", "netology", "skypro"]
+
+  section.hero
+    .container
+      .hero__wrapper
+        .hero__wrapper-text
+          h1.title.hero__title
+            | FindEdu — все для <br>выбора новой профессии <br>в одном месте
+          p.hero__text
+            | Изучение тем на вебинарах с преподавателями, личные консультации с наставником.
+            | После прохождения курса с&nbsp;наставником. После прохождения курса
+
+          +btn({href: "#", text: "Сравнить курсы", svg: "courses", class: "btn__icon", svg_width: 18, svg_height: 18})
+
+        .hero__wrapper-card
+          +picture("content", "hero", "png", "577", "auto", "Счастливый мужчина сжимает кулаки в победном жесте")
+          .hero__promo.promo
+            .promo__name
+              span.promo__name-title
+                | UX/UI designer
+              .promo__name-rating
+                +icon("star", 14, 14)
+                +icon("star", 14, 14)
+                +icon("star", 14, 14)
+                +icon("star", 14, 14)
+                +icon("star", 14, 14)
+            p.promo__desc
+                | UX/UI-дизайнер — одна из самых <br>востребованных профессий 2020 года
+            .promo__numbers
+              p.promo__numbers-price
+                | 120 000 рублей
+              p.promo__numbers-companies
+                | 1 561 компания
+            .promo__schools
+              each item in schools
+                +school(item)

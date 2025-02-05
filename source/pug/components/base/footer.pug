@@ -1,3 +1,114 @@
 mixin footer(footerMods)
+
+  -
+    const footerLinks = [
+      {
+        href: "#",
+        text: "Категории",
+        list: [
+          {
+            href: "#",
+            text: "Дизайн",
+          },
+          {
+            href: "#",
+            text: "Программирование",
+          },
+          {
+            href: "#",
+            text: "Маркетинг",
+          },
+          {
+            href: "#",
+            text: "Менеджмент",
+          },
+          {
+            href: "#",
+            text: "Аналитика",
+          }
+        ]
+      },
+      {
+        href: "#",
+        text: "Популярные направления",
+        list: [
+          {
+            href: "#",
+            text: "Веб-разработка",
+          },
+          {
+            href: "#",
+            text: "Java-разработка",
+          },
+          {
+            href: "#",
+            text: "Python-разработка",
+          },
+          {
+            href: "#",
+            text: "SMM-продвижение",
+          },
+          {
+            href: "#",
+            text: "Графический дизайн",
+          },
+          {
+            href: "#",
+            text: "Дизайн интерьеров",
+          }
+        ]
+      },
+      {
+        href: "#",
+        text: "Общая информация",
+        list: [
+          {
+            href: "#",
+            text: "О проекте",
+          },
+          {
+            href: "#",
+            text: "Политика конфиденциальности",
+          },
+          {
+            href: "#",
+            text: "Пользовательское соглашение",
+          },
+        ]
+      }
+    ]
+
   footer.footer(class=footerMods)
     .container
+      .footer__wrapper
+        .footer__flex
+          if(currentUrl === "index.html")
+            .footer__logo
+              img.footer__logo-icon(
+                src="../../img/svg/logo-white.svg",
+                width="35",
+                height="39",
+                alt="Логотип FindEdu"
+              )
+              span.footer__logo-text FindEdu
+          else
+            a.footer__logo(href="index.html", aria-label="Переход на главную")
+              img.footer__logo-icon(
+                src="../../img/svg/logo-white.svg",
+                width="35",
+                height="39",
+                alt="Переход на главную страницу"
+              )
+              span.footer__logo-text FindEdu
+          p.footer__copyright
+            | © FindEdu 2022. <br>Все права защищены.
+        nav.footer-nav
+          ul.footer-nav__list
+            each item in footerLinks
+              li.footer-nav__item
+                a.footer-nav__link(href=item.href) #{item.text}
+                ul.footer-nav__submenu.footer-nav-submenu
+                  each submenu in item.list
+                    li.footer-nav-submenu__item
+                      a.footer-nav-submenu__link(href=submenu.href) #{submenu.text}
+

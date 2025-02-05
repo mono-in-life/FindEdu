@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -22,12 +22,19 @@
 @import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/footer";
-@import "blocks/modal";
 @import "blocks/btn";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
-@import "blocks/input-upload";
+@import "blocks/submenu";
+@import "blocks/submenu-secondary";
+@import "blocks/hero";
+@import "blocks/title";
+@import "blocks/promo";
+@import "blocks/courses";
+@import "blocks/title-secondary";
+@import "blocks/courses-slide";
+@import "blocks/slider-navigation";
+@import "blocks/features";
+@import "blocks/footer-nav";
+@import "blocks/footer-nav-submenu";
 
 // ---------------------------------
 
